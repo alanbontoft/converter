@@ -1,9 +1,8 @@
 from converter import * 
 from os import system
 
+# clear screen
 system('clear')
-
-converter = Converter()
 
 # set float value - Hex = 0x3F9D70A4
 f = 1.23 
