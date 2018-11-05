@@ -42,13 +42,13 @@ class Converter:
             intvalue += datain[2] << 16
             intvalue += datain[3] << 24
         
-        # pointer to float value
+        # pointer to integer value
         ptr = pointer(c_int(intvalue))
         
         # cast to float pointer
         fp = cast(ptr, POINTER(c_float))
         
-        # retrieve integer value
+        # return float value
         return fp.contents.value
 
 
