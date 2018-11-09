@@ -2,6 +2,7 @@ from ctypes import *
 
 class Converter:
 
+    @staticmethod
     def floatToBytes(bigendian, value):
         # initialise return data
         data = [0,0,0,0]
@@ -29,6 +30,7 @@ class Converter:
         return data
 
 
+    @staticmethod
     def bytesToFloat(bigendian, datain):
 
         if bigendian:
